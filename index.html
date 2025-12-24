@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+< lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Mugni Asfi Asfiya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Mugni<span>AJA</span></a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Beranda</a>
+            <a href="#about">Tentang</a>
+            <a href="#services">Layanan</a>
+            <a href="#skills">Keahlian</a>
+            <a href="#education">Pendidikan</a>
+            <a href="#experience">Projek</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="img/Mugni.jpg" alt="Mugni Asfi Asfiya">
+        </div>
+        <div class="home-content">
+            <h1 class="home-title">Halo, Saya <span>Mugni Asfi Asfiya</span></h1>
+            <h3 class="typing-text">Saya seorang <span class="text-animation"></span></h3>
+            <p>Saya adalah individu yang bersemangat dan berdedikasi dengan minat yang mendalam dalam pengembangan dan desain web. Tujuan saya adalah menciptakan pengalaman digital yang menarik dan mudah digunakan. Saya selalu bersemangat untuk mempelajari teknologi baru dan meningkatkan keterampilan saya untuk memberikan pekerjaan berkualitas tinggi. Saya percaya dalam menggabungkan estetika dengan fungsionalitas untuk membangun solusi yang berdampak.</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mugni-asfiya-189a2630a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Mugni120" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/ajamugni" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/ajamugni?igsh=eWljMGVicmpiMmRr" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <a href="#contact" class="btn">Rekrut Saya</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading">Tentang <span>Saya</span></h2>
+        <div class="about-content">
+            <p>Halo! Saya <span>Mugni Asfi Asfiya</span> seorang pengembang web yang sangat termotivasi dan berorientasi pada detail dengan pengalaman dalam menciptakan situs web yang responsif dan dinamis. Keahlian saya meliputi teknologi front-end seperti HTML, CSS, dan JavaScript, dan saya terus memperluas pengetahuan saya ke dalam kerangka kerja back-end. Saya menikmati memecahkan masalah yang kompleks dan berkolaborasi dengan tim untuk mewujudkan ide-ide inovatif. Di waktu luang, saya suka menjelajahi trend desain baru, berolahraga, membaca komik dan bermain games .</p>
+            <p>Saat ini saya sedang menempuh pendidikan di Universitas Nasional PASIM.</p>
+            <!-- Ganti link download CV di about section -->
+            <a href="assets/CV_MugniAsfiAsfiya_(19-11-2025).pdf" download class="btn download-cv">
+                     Unduh CV <i class="fa-solid fa-download"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Layanan <span>Saya</span></h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Pengembangan Web</h3>
+                <p>Membangun situs web yang responsif dan berperforma tinggi menggunakan teknologi web modern seperti HTML5, CSS3, JavaScript, React.js, dan Node.js.</p>
+                <a href="#service-web-dev" class="btn btn-service" data-service="web-development">Baca Selengkapnya</a>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Desain UI/UX</h3>
+                <p>Menciptakan interface pengguna dan pengalaman yang intuitif dan estetis dengan fokus pada user-centered design dan prototipe interaktif.</p>
+                <a href="#service-ui-ux" class="btn btn-service" data-service="ui-ux">Baca Selengkapnya</a>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Project Data Analyst</h3>
+                <p>Melakukan analisis data untuk memberikan wawasan dan rekomendasi berdasarkan data yang dianalisis.</p>
+                <a href="#service-data-analyst" class="btn btn-service" data-service="data-analyst">Baca Selengkapnya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal untuk Detail Layanan -->
+    <div id="service-modal" class="service-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modal-title">Judul Layanan</h3>
+            <div id="modal-body">
+                <p>Detail layanan akan muncul di sini.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">Keahlian <span>Saya</span></h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Front-end</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Back-end</h3>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>Python</li>
+                    <li>PHP (Laravel)</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Alat & Lainnya</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>Figma</li>
+                    <li>VS Code</li>
+                    <li>Postman</li>
+                    <li>Microsoft Office    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">Pendidikan <span>Saya</span></h2>
+        <div class="education-container">
+            <div class="education-item">
+                <div class="education-dot"></div>
+                <h4>2023 - 2027</h4>
+                <h3>Universitas Nasional PASIM</h3>
+                <p>Sarjana Ilmu Komputer</p>
+                <p class="education-desc">Fokus pada pengembangan perangkat lunak, basis data, dan Analisis Data. IPK: 3.74/4.00</p>
+            </div>
+            <div class="education-item">
+                <div class="education-dot"></div>
+                <h4>2020 - 2023</h4>
+                <h3>MA AL-ISIQOMAH</h3>
+                <p>Ilmu Pengetahuan Alam</p>
+                <p class="education-desc">Lulus dengan nilai rata-rata UN 87.5. Aktif dalam organisasi OSIS sebagai Anggota.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2 class="heading">Projek <span>Saya</span></h2>
+        <div class="experience-container">
+            <div class="experience-item">
+                <div class="experience-dot"></div>
+                <h4>Website</h4>
+                <h3>Portofolio</h3>
+                <p>Membuat website portofolio pribadi dengan menggunakan html, css, dan javascript.</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-dot"></div>
+                <h4>Aplikasi</h4>
+                <h3>Absensi</h3>
+                <p>Memembuat aplikasi absensi sederhana menggunakan visual basic dan database mysql.</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-dot"></div>
+                <h4>Website</h4>
+                <h3>Kalkulator</h3>
+                <p>Membuat website kalkulator sederhana menggunakan html, css, dan javascrip.t</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-dot"></div>
+                <h4>Website</h4>
+                <h3>Login Page</h3>
+                <p>Membuat login page simple dengan menggunakan html, css, dan javascript.</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-dot"></div>
+                <h4>Website</h4>
+                <h3>Anime(BNHA)</h3>
+                <p>Membuat website anime lover dengan menggunakan html, css, dan javascript.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Hubungi <span>Saya</span></h2>
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" placeholder="Nama Lengkap" id="name" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="Nomor Ponsel" id="phone">
+                <input type="email" placeholder="Alamat Email" id="email" required>
+            </div>
+            <textarea id="message" cols="30" rows="10" placeholder="Pesan Anda" required></textarea>
+            <input type="submit" value="Kirim Pesan" class="btn">
+        </form>
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <h3>Email</h3>
+                    <p>mugi47044@gmail.com</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <h3>Telepon</h3>
+                    <p>+62 831 5577 5442</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-brands fa-instagram"></i>
+                <div>
+                    <h3>Instagram</h3>
+                    <p>@ajamugni</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Hak Cipta &copy; 2025 oleh Mugni Asfi Asfiya | Semua Hak Dilindungi.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+        <!-- Modal untuk Preview CV -->
+    <div id="cv-modal" class="cv-modal">
+        <div class="modal-content">
+            <span class="close-cv-modal">&times;</span>
+            <h3>Curriculum Vitae <span>Mugni Asfi Asfiya</span></h3>
+            <div class="cv-preview-container">
+                <div class="cv-header-preview">
+                    <div class="cv-personal-info">
+                        <h4><i class="fa-solid fa-user"></i> Informasi Pribadi</h4>
+                        <p><strong>Nama:</strong> Mugni Asfi Asfiya</p>
+                        <p><strong>Email:</strong> mugi47044@gmail.com</p>
+                        <p><strong>Telepon:</strong> +62 831 5577 5442</p>
+                        <p><strong>Lokasi:</strong> Bandung, Jawa Barat</p>
+                    </div>
+                </div>
+                
+                <div class="cv-section-preview">
+                    <h4><i class="fa-solid fa-user-graduate"></i> Pendidikan</h4>
+                    <div class="cv-item">
+                        <h5>Universitas Nasional PASIM</h5>
+                        <p class="cv-period">2023 - 2027</p>
+                        <p>Sarjana Ilmu Komputer</p>
+                        <p class="cv-desc">IPK: 3.74/4.00</p>
+                    </div>
+                    <div class="cv-item">
+                        <h5>MA AL-ISIQOMAH</h5>
+                        <p class="cv-period">2020 - 2023</p>
+                        <p>Ilmu Pengetahuan Alam</p>
+                        <p class="cv-desc">Nilai UN: 87.5</p>
+                    </div>
+                </div>
+                
+                <div class="cv-section-preview">
+                    <h4><i class="fa-solid fa-code"></i> Keahlian Teknis</h4>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">Frontend</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Backend</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data Analysis</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cv-section-preview">
+                    <h4><i class="fa-solid fa-briefcase"></i> Pengalaman Projek</h4>
+                    <div class="cv-item">
+                        <h5>Website Portofolio</h5>
+                        <p>Membuat website portofolio dengan HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="cv-item">
+                        <h5>Aplikasi Absensi</h5>
+                        <p>Membuat aplikasi absensi dengan Visual Basic & MySQL</p>
+                    </div>
+                    <div class="cv-item">
+                        <h5>Website Kalkulator</h5>
+                        <p>Membuat kalkulator web dengan HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+                
+                <div class="cv-actions">
+                    <a href="assets/CV_MugniAsfiAsfiya_(19-11-2025).pdf" download class="btn download-cv-btn">
+                        <i class="fa-solid fa-download"></i> Download CV Lengkap (PDF)
+                    </a>
+                    <button class="btn close-cv-btn">
+                        <i class="fa-solid fa-times"></i> Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
